@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survei Kepuasan Pasien | UPTD Puskesmas Kademangan</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
     
@@ -20,9 +19,9 @@
         </div>
 
         <div class="emoji-selector">
-            <input id="tdkpuas" type="radio" name="Kepuasan Pasien" value="Tidak Puas" />
+            <input id="tdkpuas" type="radio" name="Kepuasan" value="Tidak Puas" />
             <label class="drinkemoji-cc tdkpuas" for="tdkpuas"></label>
-            <input id="puas" type="radio" name="Kepuasan Pasien" value="Puas" checked />
+            <input id="puas" type="radio" name="Kepuasan" value="Puas" checked />
             <label class="drinkemoji-cc puas"for="puas"></label>
 
         </div>
@@ -37,13 +36,12 @@
             <input type="text" name="Saran" required placeholder="Saran">
         </div>
 
-        <button type="submit" id="submitButton">Submit</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
     
 <script>
    const form = document.querySelector("#form")
-   const submitButton = document.querySelector("#submit")
    const scriptURL = 'https://script.google.com/macros/s/AKfycbxSWzDQpF1d0nY3auqMbgC-OnXpIBJb0V7PHwIk8njUVRJTR0qg75mZlls3uIkOq7Lp/exec'
 
    form.addEventListener('submit', e => {
