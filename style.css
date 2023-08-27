@@ -9,7 +9,7 @@ body {
     background: linear-gradient(to bottom right, #ff966d, #fa538d, #89379c);
 }
 
-.form {
+form {
     background: #ffffff;
     padding: 60px;
     width: 550px;
