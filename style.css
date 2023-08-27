@@ -59,11 +59,12 @@ form button {
 .tdkpuas{background-image:url(http://i.imgur.com/lXzJ1eB.png);}
 .puas{background-image:url(http://i.imgur.com/SJbRQF7.png);}
 
+
 .emoji-selector input:active +.drinkemoji-cc{opacity: .9;}
 .emoji-selector input:checked +.drinkemoji-cc{
-    -webkit-filter: none;
-       -moz-filter: none;
-            filter: none;
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
 }
 .drinkemoji-cc{
     cursor:pointer;
