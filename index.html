@@ -36,23 +36,27 @@
             <input type="text" name="Saran" required placeholder="Saran">
         </div>
 
-        <button type="submit">Submit</button>
+        <button id="submit" type="submit">Submit</button>
     </form>
 </body>
     
 <script>
    const form = document.querySelector("#form")
+    const submit = document.querySelector("#submit")
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxSWzDQpF1d0nY3auqMbgC-OnXpIBJb0V7PHwIk8njUVRJTR0qg75mZlls3uIkOq7Lp/exec'
 
   form.addEventListener('submit', e => {
+      submit.disabled = true
     e.preventDefault()
 
     const responseBody = new FormData(form)
     const TrendBody = responseBody.getAll("TRENDS").join(" ")
     responseBody.set('TRENDS', TrendBody)
     fetch(scriptURL, { method: 'POST', body: responseBody })
-      .then(response => { alert('Success!', response) })
-      .catch(error => alert('Error!', error.message))
+      .then(response => { alert('Terima kasih telah mengisi!', response)
+                        submit.disabled = false})
+      .catch(error => { alert('Error, Data tidak tersubmit!', error.message)
+                      submit.disabled = false })
    })
 </script>
 </html>
