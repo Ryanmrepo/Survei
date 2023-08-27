@@ -65,9 +65,9 @@ input[type=radio] { opacity:0; }
 
 .emoji-selector input:active +.drinkemoji-cc{opacity: .9;}
 .emoji-selector input:checked +.drinkemoji-cc{
-    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
-       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
-            filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -webkit-filter: brightness(1) grayscale(0) opacity(1);
+       -moz-filter: brightness(1) grayscale(0) opacity();
+            filter: brightness(1) grayscale(0) opacity(1);
 }
 .drinkemoji-cc{
     cursor:pointer;
