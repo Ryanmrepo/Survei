@@ -56,8 +56,8 @@ form button {
        -moz-appearance:none;
             appearance:none;
 }
-.tdkpuas{background-image:url(http://i.imgur.com/lXzJ1eB.png);}
-.puas{background-image:url(http://i.imgur.com/SJbRQF7.png);}
+.tdkpuas{background-image:url(http://i.imgur.com/lXzJ1eB.png); visibility:hidden;}
+.puas{background-image:url(http://i.imgur.com/SJbRQF7.png); visibility:hidden;}
 
 
 .emoji-selector input:active +.drinkemoji-cc{opacity: .9;}
