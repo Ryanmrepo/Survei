@@ -52,7 +52,7 @@ form button {
     width 100%;
     padding: 20px;
     color: black;
-    background: white;
+    background: #C0C0C0;
     border-radius: 5px;
     border: none;
     font-size: 18px;
@@ -66,7 +66,7 @@ form button {
             appearance:none;
 }
 
-input[type=radio] { opacity:0; }
+input[type=radio] { opacity:0; text-align:center;}
 
 .tdkpuas{background-image:url(http://i.imgur.com/T3dxcR3.png); }
 .puas{background-image:url(http://i.imgur.com/gFAc8mW.png); }
