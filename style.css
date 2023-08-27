@@ -89,6 +89,13 @@ input[type=radio] { opacity:0; }
             filter: brightness(1.2) grayscale(.5) opacity(.9);
 }
 
+.footer{ 
+       position: fixed;     
+       text-align: center;    
+       bottom: 0px; 
+       width: 100%;
+   }  
+
 /* Extras */
 a:visited{color:#888}
 a{color:#444;text-decoration:none;}
