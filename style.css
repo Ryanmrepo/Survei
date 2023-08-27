@@ -21,7 +21,6 @@ form {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    text-align:center;
 }
 
 .form-element span {
@@ -52,7 +51,7 @@ form button {
 }
 
 .emoji-selector input{
-    margin:0;padding:0;
+    margin:0;padding:0;align-items:center;
     -webkit-appearance:none;
        -moz-appearance:none;
             appearance:none;
@@ -94,7 +93,7 @@ input[type=radio] { opacity:0; }
        text-align: center;    
        bottom: 0px; 
        width: 100%;
-       font-size:10px;
+       font-size:8px;
    }  
 
 /* Extras */
