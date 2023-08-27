@@ -59,8 +59,12 @@ form button {
     cursor:pointer;
 }
 
+.emoji-selector {
+    text-align:center;
+}
+
 .emoji-selector input{
-    margin:0;padding:0;text-align:center;
+    margin:0;padding:0;
     -webkit-appearance:none;
        -moz-appearance:none;
             appearance:none;
