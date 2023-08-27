@@ -41,23 +41,17 @@
     
 <script>
    const form = document.querySelector("#form")
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbxSWzDQpF1d0nY3auqMbgC-OnXpIBJb0V7PHwIk8njUVRJTR0qg75mZlls3uIkOq7Lp/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxSWzDQpF1d0nY3auqMbgC-OnXpIBJb0V7PHwIk8njUVRJTR0qg75mZlls3uIkOq7Lp/exec'
 
-   form.addEventListener('submit', e => {
-     submitButton.disabled = true
-     e.preventDefault()
-     let requestBody = new FormData(form)
-     fetch(scriptURL, { method: 'POST', body: requestBody})
-       .then(response => {
-          alert('Success!', response)
-          submitButton.disabled = false
-         })
-       .catch(error => {
-       alert('Error!', error.message)
-         submitButton.disabled = false
+  form.addEventListener('submit', e => {
+    e.preventDefault()
 
-       }
-       )
+    const responseBody = new FormData(form)
+    const TrendBody = responseBody.getAll("TRENDS").join(" ")
+    responseBody.set('TRENDS', TrendBody)
+    fetch(scriptURL, { method: 'POST', body: responseBody })
+      .then(response => { alert('Success!', response) })
+      .catch(error => alert('Error!', error.message))
    })
 </script>
 </html>
