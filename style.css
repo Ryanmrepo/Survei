@@ -25,6 +25,7 @@ form {
 
 .form-element span {
     margin-bottom: 10px;
+    text-align:center;
 }
 
 input,
