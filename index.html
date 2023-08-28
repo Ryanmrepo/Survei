@@ -62,7 +62,9 @@
     responseBody.set('TRENDS', TrendBody)
     fetch(scriptURL, { method: 'POST', body: responseBody })
       .then(response => { alert('Terima kasih telah mengisi!', response)
-                        submit.disabled = false})
+                        submit.disabled = false
+                        window.location.href = "http://ryanmrepo.github.io/Submitted";
+                        })
       .catch(error => { alert('Error, Data tidak tersubmit!', error.message)
                       submit.disabled = false })
    })
